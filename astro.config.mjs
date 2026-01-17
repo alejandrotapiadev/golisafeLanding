@@ -6,12 +6,9 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   site: 'https://alejandrotapiadev.github.io',
-  base: 'golisafeLanding',
-  integrations: [mdx(), sitemap()],
+  base: '/golisafeLanding',
+  integrations: [mdx(), sitemap()], 
   vite: {
-    plugins: [tailwindcss()],
-    build: {
-      assetsInlineLimit: 0, // fuerza que todos los assets (css/js) se referencien correctamente
-    },
+    plugins: [tailwindcss()]
   },
 });
