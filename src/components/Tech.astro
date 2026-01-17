@@ -1,0 +1,53 @@
+<section id="tech" class="tech">
+  <h2>Tecnología</h2>
+
+  <ul>
+    <li>🐍 Python</li>
+    <li>🪟 Tkinter</li>
+    <li>🗄️ SQLite</li>
+    <li>🔐 Cryptography</li>
+    <li>📁 Variables de entorno (.env)</li>
+  </ul>
+
+<style>
+  .tech {
+    padding: 120px 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+
+  li {
+    background: #111822;
+    padding: 24px;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+
+  @media (max-width: 480px) {
+  ul {
+    grid-template-columns: 1fr; /* 1 columna móvil */
+  }
+
+  li {
+    font-size: 0.95rem;
+    padding: 18px;
+  }
+}
+</style>
+</section>

@@ -1,0 +1,167 @@
+<section class="hero" id="golisafe">
+  <h1>Golisafe</h1>
+  <p class="subtitle">Contraseñas de bolsillo</p>
+
+  <p class="description">
+    Gestor de contraseñas de escritorio, seguro, local y cifrado.
+    Control total de tus datos, sin depender de la nube.
+  </p>
+
+  <div class="actions">
+    <a href="#download" class="btn-primary">Descargar</a>
+    <a
+      href="https://github.com/alejandrotapiadev/golisafe"
+      target="_blank"
+      rel="noopener"
+      class="btn-secondary"
+    >
+      Ver en GitHub
+    </a>
+  </div>
+  <!--Scroll down -->
+  <a href="#features">
+    <div class="scroll-down">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#00d1c1"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="feather feather-arrow-down"
+      >
+        <line x1="12" y1="5" x2="12" y2="19"></line>
+        <polyline points="19 12 12 19 5 12"></polyline>
+      </svg>
+    </div>
+  </a>
+  <style>
+
+  .hero {
+    text-align: center;
+    padding: 160px 20px 120px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+    color: #00d1c1;
+    font-weight: 600;
+  }
+
+  .description {
+    max-width: 640px;
+    margin: 32px auto 48px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+
+  .actions {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    background: #00d1c1;
+    color: #000;
+    padding: 16px 36px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    width: 30%;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 209, 193, 0.25);
+  }
+
+  .btn-secondary {
+    border: 1px solid #00d1c1;
+    color: #00d1c1;
+    padding: 16px 36px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background 0.15s ease;
+    width: 30%;
+  }
+
+  .btn-secondary:hover {
+    background: rgba(0, 209, 193, 0.1);
+  }
+
+
+  .scroll-down {
+  margin-top: 40px;
+  justify-content: center;
+  animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+  transition: transform 0.2s ease;
+}
+
+.scroll-down svg {
+  width: 32px;
+  height: 32px;
+  stroke: #00d1c1;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+
+
+
+  /* Mobile-first ya definido, ahora media queries para tablets y desktops */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    max-width: 700px;
+  }
+
+  .actions {
+    gap: 32px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 18px 40px;
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1.25rem;
+  }
+}
+</style>
+</section>

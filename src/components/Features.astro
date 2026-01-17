@@ -1,0 +1,59 @@
+<section id="features" class="features">
+  <h2>Características</h2>
+
+  <ul>
+    <li>🔐 Cifrado seguro de contraseñas</li>
+    <li>💾 Almacenamiento local con SQLite</li>
+    <li>🖥️ Aplicación de escritorio</li>
+    <li>🧠 Interfaz simple y clara</li>
+    <li>🔒 Privacidad total (sin nube)</li>
+    <li>⚡ Acceso rápido a tus credenciales</li>
+  </ul>
+
+<style>
+  .features {
+    padding: 120px 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 2.2rem;
+    letter-spacing: -0.5px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
+
+  li {
+    background: #111822;
+    padding: 28px;
+    border-radius: 16px;
+    line-height: 1.5;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  @media (max-width: 480px) {
+  ul {
+    grid-template-columns: 1fr; /* colapsa a 1 columna en móviles */
+  }
+
+  li {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+}
+</style>
+</section>
