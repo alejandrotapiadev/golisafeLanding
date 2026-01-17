@@ -7,7 +7,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://alejandrotapiadev.github.io/golisafe-landing/',
+  base: '/golisafe-landing/', // <- esto es clave para GitHub Pages
   integrations: [mdx(), sitemap()],
 
   vite: {
