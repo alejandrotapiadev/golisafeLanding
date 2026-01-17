@@ -81,5 +81,42 @@
   .btn-secondary:hover {
     background: rgba(0, 209, 193, 0.1);
   }
+
+  /* Mobile-first ya definido, ahora media queries para tablets y desktops */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    max-width: 700px;
+  }
+
+  .actions {
+    gap: 32px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 18px 40px;
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1.25rem;
+  }
+}
 </style>
 </section>

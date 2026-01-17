@@ -44,5 +44,16 @@
     transform: translateY(-4px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   }
+
+  @media (max-width: 480px) {
+  ul {
+    grid-template-columns: 1fr; /* colapsa a 1 columna en móviles */
+  }
+
+  li {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+}
 </style>
 </section>
