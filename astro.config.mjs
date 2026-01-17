@@ -2,16 +2,16 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-
 import tailwindcss from '@tailwindcss/vite';
 
-// https://astro.build/config
 export default defineConfig({
   site: 'https://alejandrotapiadev.github.io/golisafe-landing/',
-  base: '/golisafe-landing/', // <- esto es clave para GitHub Pages
+  base: '/golisafe-landing/',
   integrations: [mdx(), sitemap()],
-
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      assetsInlineLimit: 0, // fuerza que todos los assets (css/js) se referencien correctamente
+    },
   },
 });
