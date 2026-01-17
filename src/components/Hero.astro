@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" id="golisafe">
   <h1>Golisafe</h1>
   <p class="subtitle">Contraseñas de bolsillo</p>
 
@@ -18,8 +18,27 @@
       Ver en GitHub
     </a>
   </div>
+  <!--Scroll down -->
+<div class="scroll-down">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#00d1c1"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="feather feather-arrow-down"
+  >
+    <line x1="12" y1="5" x2="12" y2="19"></line>
+    <polyline points="19 12 12 19 5 12"></polyline>
+  </svg>
+</div>
 
   <style>
+
   .hero {
     text-align: center;
     padding: 160px 20px 120px;
@@ -61,6 +80,7 @@
     text-decoration: none;
     font-weight: 700;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
+    width: 30%;
   }
 
   .btn-primary:hover {
@@ -76,11 +96,33 @@
     text-decoration: none;
     font-weight: 700;
     transition: background 0.15s ease;
+    width: 30%;
   }
 
   .btn-secondary:hover {
     background: rgba(0, 209, 193, 0.1);
   }
+
+
+  .scroll-down {
+  margin-top: 40px;
+  justify-content: center;
+  animation: bounce 2s infinite;
+}
+
+.scroll-down svg {
+  width: 32px;
+  height: 32px;
+  stroke: #00d1c1;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+
+
 
   /* Mobile-first ya definido, ahora media queries para tablets y desktops */
 @media (min-width: 768px) {
