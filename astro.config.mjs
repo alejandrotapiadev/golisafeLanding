@@ -5,8 +5,8 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  site: 'https://alejandrotapiadev.github.io/golisafe-landing/',
-  base: './',
+  site: 'https://alejandrotapiadev.github.io',
+  base: 'golisafeLanding',
   integrations: [mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
